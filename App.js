@@ -15,18 +15,22 @@ export default class App extends React.Component {
     //You can add N number of Views here in if-else condition
     if (this.state.val === 1) {
       //Return the FirstScreen as a child to set in Parent View
+      alert("yoo your are in 1st screen");
       return <FirstScreen/>
     } else if (this.state.val === 2) {
       //Return the SecondScreen as a child to set in Parent View
+      alert("yoo your are in 2nd screen");
       return <SecondScreen />;
     } else {
       //Return the ThirdScreen as a child to set in Parent View
+      alert("yoo your are in 3rd screen");
       return <ThirdScreen />;
     }
   }
   render() {
     return (
       <View style={styles.container}>
+
         <View style={{ flexDirection: 'row' }}>
           {/*To set the FirstScreen*/}
           <TouchableOpacity
